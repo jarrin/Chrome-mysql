@@ -1,0 +1,88 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+html, body
+{
+	height: 100%;
+	width: 100%;
+}
+
+#toolbar
+{
+	font-size: 8pt;
+}
+#toolbar .jqx-menu-item-top > a
+{
+	height: 100%;
+}
+#toolbar .jqx-menu-item-top
+{
+	padding: 1px;
+	border-radius: 0px;
+}
+#toolbar .jqx-fill-state-hover-energyblue
+{
+	border-top-color: #cfdde9;
+	border-bottom-color: #cfdde9;
+}
+#toolbar .toolbar-icon
+{
+	margin: 0px 4px;
+}
+#toolbar > ul { padding: 0; }
+
+#main-horizontal-splitter
+{
+	border-top: 0;
+}
+
+#servers-window .jqx-window-content
+{
+	padding: 0;
+	overflow: hidden;
+}
+	#server-window-splitter
+	{
+		padding: 0;
+		border: 0;
+	}
+	#servers-window-toolbar
+	{
+		border-radius: 0;
+		border-bottom-width: 0;
+	}
+	#servers-window-list
+	{
+		border: 0;
+	}
+	#server-window-edit, #server-window-select-server
+	{
+		width: 100%;
+		height: 100%;
+	}
+	#server-window-select-server
+	{
+		background: #CFDDE9;
+		display:table;
+		height: 100%;
+		width: 100%;
+	}
+	#server-window-select-server > div
+	{
+		display:table-cell;
+		vertical-align:middle;
+		text-align: center;
+		font-weight: bold;
+		color: rgba(0,0,0,0.6);
+    	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+		font-size: 16pt;
+	}
+	#server-window-edit{ display: none; }
+.console
+{
+	height: 100%;
+	width: 100%;
+	clear: both;
+}

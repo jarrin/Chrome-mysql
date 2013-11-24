@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Hello World</title>
+  		<link rel="stylesheet"  href="css/jqx.base.css" type="text/css" />
+  		<link rel="stylesheet"  href="css/jqx.energyblue.css" type="text/css" />
+  		<link rel="stylesheet"  href="css/shThemeDefault.css" type="text/css" />
+	    <link href="css/main.css" rel="stylesheet">
+
+	    <script type="text/javascript" src="js/jquery.js" ></script>
+	    <script type="text/javascript" src="js/jqx-all.js" ></script>
+	    <script type="text/javascript" src="js/xregexp-min.js" ></script>
+		<script type="text/javascript" src="js/shCore.js" ></script>
+		<script type="text/javascript" src="js/shBrushSql.js" ></script>
+		<script type="text/javascript" src="js/jquery.indexeddb.js" ></script>
+
+		<script type="text/javascript" src="js/errorHandler.js" ></script>
+		<script type="text/javascript" src="js/database.js" ></script>
+		<script type="text/javascript" src="js/console.js" ></script>
+	    <script type="text/javascript" src="js/uiHelper.js" ></script>
+	    <script type="text/javascript" src="js/events.js" ></script>
+	    <script type="text/javascript" src="js/servers.js" ></script>
+
+	    <script type="text/javascript" src="js/init.js" ></script>
+	</head>
+	<body>
+		<!--
+		=====================================================================================
+			TOOLBAR
+		=====================================================================================
+		-->
+
+		<div id="toolbar" >
+			<ul>
+			    <li data-icon="server_edit" data-action="open-servers" ></li>
+			    <li id="toolbar-servers" data-icon="server_connect">
+			    	<a>Connect Server</a>
+			    	<ul>
+			    		<li>No Servers</li>
+			    	<ul>
+			    </li>
+			</ul>
+		</div>
+		<!--
+		=====================================================================================
+			PANELS
+		=====================================================================================
+		-->
+		<div id="main-horizontal-splitter">
+            <div >
+	            <div id="main-vertical-splitter">
+	            	<div >
+	            		
+	            	</div>
+	            	<div >
+	            		
+	            	</div>
+	            </div>
+            </div>            
+            <div id="under-panel">
+            </div>
+        </div>
+		<!--
+		=====================================================================================
+			Windows
+		=====================================================================================
+		-->
+		<div id="servers-window" >
+		
+			<div>
+
+				<div id="server-window-splitter" >
+					<div>
+						<div id ="server-window-list" ></div>
+					</div>
+					<div>
+						<div id="server-window-edit" >
+							<table id="server-window-table" >
+
+								<tr></tr>
+								</table>
+						</div>
+						<div id="server-window-select-server" >
+							<div>Select a server</div>
+						</div>
+
+					</div>
+				</div>
+				<div id="servers-window-toolbar" >
+					<ul >
+						<li data-icon="server_add" data-action="add-server" ><a>Add</a></li>
+						<li data-icon="server_delete" data-action="delete-server" ><a>Remove</a></li>
+					</ul>
+				</div>
+
+			</div>	
+		</div>
+	</body>
+</html>
