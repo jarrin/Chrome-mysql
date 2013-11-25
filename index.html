@@ -76,10 +76,37 @@
 					</div>
 					<div>
 						<div id="server-window-edit" >
-							<table id="server-window-table" >
+							<form id="server-edit-form" >
+								<table id="server-window-table" data-current-id="0">
 
-								<tr></tr>
-								</table>
+									<tr>
+										<td class="table-left">Name</td>
+										<td><input type="text" id="server-window-name" ></td>
+									</tr>
+									<tr>
+										<td class="table-left">Host</td>
+										<td><input type="text" id="server-window-host" ></td>
+									</tr>								<tr>
+										<td class="table-left">Port</td>
+										<td><input type="number" id="server-window-port" size="4" min="1" max="65535" ></td>
+									</tr>
+									<tr>
+										<td class="table-left">Ask for credentials</td>
+										<td><input type="checkbox" id="server-window-user" ></td>
+									</tr>
+									<tr>
+										<td class="table-left">User</td>
+										<td><input type="text" id="server-window-user" ></td>
+									</tr>
+									<tr>
+										<td class="table-left">Password</td>
+										<td><input type="password" id="server-window-password" ></td>
+									</tr>					
+									
+									</table>
+								</form>
+								<div id="server-window-edit-under" >
+								</div>
 						</div>
 						<div id="server-window-select-server" >
 							<div>Select a server</div>

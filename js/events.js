@@ -15,9 +15,9 @@ var events =
 	},
 	bindServerWindowList: function(elelement)
 	{
-		elelement.on('select', function (event)
+		elelement.on('select', function (e)
 		{
-			server.switchServerPanel(event.args.item.value);
+			servers.switchServerPanel(e.args.item.value);
 
 		});
 	}

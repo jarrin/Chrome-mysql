@@ -59,7 +59,17 @@ var servers =
 	},
 	switchServerPanel: function(id)
 	{
-		
+
+		var sel_server = this.servers[id];
+		//Settinng form values
+		$("#server-window-name").val(sel_server.name);
+		$("#server-window-host").val(sel_server.host);
+		$("#server-window-port").val(sel_server.port);
+		if($("#server-window-select-server").is(":visible"))
+		{
+			$("#server-window-select-server").hide();
+			$("#server-window-edit").show();
+		}
 	}
 }
 servers.init();
